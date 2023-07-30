@@ -10,8 +10,25 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="text-center">Evento</h3>
-                            
+                            <h3 class="text-center">Agenda</h3>
+                            <div id='calendar'></div>
+                            <script>
+
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    var calendarEl = document.getElementById('calendar');
+                                    var calendar = new FullCalendar.Calendar(calendarEl, {
+                                        initialView: 'dayGridMonth',
+                                        locale:"es",
+                                        headerToolbar:{
+                                            left:'prev,next today',
+                                            center:'title',
+                                            right:'dayGridMonth, timeGridWeek, timeGridDay'
+                                        }
+                                    });
+                                    calendar.render();
+                                });
+
+                            </script>
                         </div>
                     </div>
                 </div>

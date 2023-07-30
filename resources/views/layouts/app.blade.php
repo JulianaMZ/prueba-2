@@ -14,6 +14,11 @@
     <link href="{{ asset('assets/css/sweetalert.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/css/select2.min.css') }}" rel="stylesheet" type="text/css"/>
 
+    //calendario
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.js"></script>
+
 @yield('page_css')
 <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
@@ -31,7 +36,7 @@
             @include('layouts.header')
     
         </nav>
-        <div class="main-sidebar main-sidebar-postion">Demo SIMJ
+        <div class="text-center main-sidebar main-sidebar-postion">Demo SIMJ
             @include('layouts.sidebar')
         </div>
         <!-- Main Content -->
